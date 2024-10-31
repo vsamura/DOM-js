@@ -13,7 +13,9 @@
 
   <script>
     for(let element of document.body.children){
-      
+      if (element.matches('a[href$=".ru"]')){
+        element.innerHTML = 'Ссылка в зоне .ru'
+      }
     }
   </script>
 </body>
