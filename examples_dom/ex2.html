@@ -15,9 +15,23 @@
     <li>Пункт 3</li>
     <li>Пункт 4</li>
   </ul>
+  <ul>
+    <li>Пункт 5</li>
+    <li>Пункт 6</li>
+  </ul>
+  <ul>
+    <li>Пункт 7</li>
+    <li>Пункт 8</li>
+  </ul>
 
   <script>
-
+    let elements = document.querySelectorAll('ul > li:first-child')
+    let i = 1
+    for(let element of elements){
+      element.style.color = 'grey'
+      element.innerHTML = `Новый пункт ${i}`
+      i += 2
+    }
   </script>
 </body>
 </html>
